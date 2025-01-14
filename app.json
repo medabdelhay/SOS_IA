@@ -13,13 +13,27 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.medabdelhay.sosai",  
+      "buildNumber": "1.0.0",  
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app requires access to your camera to scan QR codes.",
+        "NSLocationWhenInUseUsageDescription": "This app requires access to your location to send emergency alerts."
+      },
+      "entitlements": {
+        "com.apple.developer.networking.wifi-info": true
+      },
+      "appleSignIn": {
+        "isEnabled": false  
+      },
+      "bundleVersion": "1" 
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.medabdelhay.sosai"
     },
     "web": {
       "favicon": "./assets/favicon.png"
